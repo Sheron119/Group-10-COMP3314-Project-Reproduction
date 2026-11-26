@@ -230,7 +230,7 @@ DELTAS = [1e-1, 1e-3, 1e-5]
 TRIALS = 50
 INSTANCE = "uniform" # Change "uniform" to "normal" for testing in differnet distributions
 
-print(f"Starting flawless fast reproduction on {INSTANCE}...")
+print(f"Starting reproduction on {INSTANCE}...")
 start_time = time.time()
 results = []
 
