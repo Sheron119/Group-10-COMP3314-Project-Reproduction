@@ -47,7 +47,7 @@ pip install numpy pandas scipy
 ```bash
 python repro.py
 ```
-**Note on Execution Time:** The script is configured to run **50 trials** per setting across **3 delta values** (`10^-1`, `10^-3`, `10^-5`) for both Uniform and Normal distributions. It takes approximately **5–8 minutes** to complete.
+**Note on Execution Time:** The script is configured to run **50 trials** per setting across **3 delta values** (`10^-1`, `10^-3`, `10^-5`) for both Uniform and Normal distributions. It takes approximately **6-10 minutes** to complete one distribution.
 
 *(To run the Normal distribution instead of the default Uniform distribution, open `repro.py` and change `INSTANCE = "uniform"` to `INSTANCE = "normal"` at the bottom of the script).*
 
