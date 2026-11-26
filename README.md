@@ -53,7 +53,7 @@ We built the wrapper script (`repro.py`) to make the authors' code runnable on c
 
 ---
 
-### Reproduced Results
+## Reproduced Results
 
 **Data Format:** Each cell displays **Batch Complexity / Sample Complexity / Recall**.
 
