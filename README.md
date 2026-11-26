@@ -12,6 +12,27 @@ The goal of this project was to run the authors' algorithms (Tri-BBAI and Opt-BB
 
 ---
 
+## Setup and Run Instructions
+
+### Prerequisites
+Ensure you have Python 3.8+ installed. You will need the following libraries:
+```bash
+pip install numpy pandas scipy
+```
+
+### How to Run
+1. Clone this repository to your local machine.
+2. Open a terminal and navigate to the project directory.
+3. Run the reproduction script:
+```bash
+python repro.py
+```
+**Note on Execution Time:** The script is configured to run **50 trials** per setting across **3 delta values** (`10^-1`, `10^-3`, `10^-5`) for both Uniform and Normal distributions. It takes approximately **6-10 minutes** to complete one distribution.
+
+*(To run the Normal distribution instead of the default Uniform distribution, open `repro.py` and change `INSTANCE = "uniform"` to `INSTANCE = "normal"` at the bottom of the script).*
+
+---
+
 ## Code Attribution
 ### 1. Paper's Author Contributions (Core Mathematics)
 The mathematical foundation of this project was sourced directly from the authors' official repository. 
@@ -31,25 +52,6 @@ We built the wrapper script (`repro.py`) to make the authors' code runnable on c
 *   **Data Generation:** `generate_means()` is used to create the Uniform and Normal bandit instances.
 
 ---
-
-## Setup and Run Instructions
-
-### Prerequisites
-Ensure you have Python 3.8+ installed. You will need the following libraries:
-```bash
-pip install numpy pandas scipy
-```
-
-### How to Run
-1. Clone this repository to your local machine.
-2. Open a terminal and navigate to the project directory.
-3. Run the reproduction script:
-```bash
-python repro.py
-```
-**Note on Execution Time:** The script is configured to run **50 trials** per setting across **3 delta values** (`10^-1`, `10^-3`, `10^-5`) for both Uniform and Normal distributions. It takes approximately **6-10 minutes** to complete one distribution.
-
-*(To run the Normal distribution instead of the default Uniform distribution, open `repro.py` and change `INSTANCE = "uniform"` to `INSTANCE = "normal"` at the bottom of the script).*
 
 ### Reproduced Results
 
